@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Grocery Tracker</title>
+</head>
+<body>
+  <h1>Grocery Tracker</h1>
+
+<label for="grocery1">Enter first grocery amount: </label> <input type="number" id="grocery1"><br><br>
+
+<label for="grocery2">Enter second grocery amount: </label> <input type="number" id="grocery2"><br><br>
+
+<label for="grocery3">Enter third grocery amount: </label> <input type="number" id="grocery3"><br><br>
+
+<button onclick="groceryTracker(
+ Number(document.getElementById('grocery1').value),
+ Number(document.getElementById('grocery2').value),
+ Number(document.getElementById('grocery3').value)
+)">Calculate Total</button><br><br>
+
+  <p id="result"></p>
+
+  <script src="./groceryTracker.js"></script>
+
+</body>
+</html>
