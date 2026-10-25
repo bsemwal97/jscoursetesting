@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover beaches, temples and remarkable places with Roam, a travel recommendation project."
+    />
+    <title>Find your next escape | Roam Travel</title>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+    <script src="travel_recommendation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a
+          class="brand"
+          href="travel_recommendation.html"
+          aria-label="Roam home"
+          ><span class="brand-icon">✳</span> roam<span class="brand-dot"
+            >.</span
+          ></a
+        >
+        <div class="nav-links">
+          <a aria-current="page" href="travel_recommendation.html">Home</a
+          ><a href="about_us.html">About Us</a
+          ><a href="contact_us.html">Contact Us</a>
+        </div>
+        <form class="search" id="searchForm" role="search">
+          <span aria-hidden="true">⌕</span
+          ><input
+            id="searchInput"
+            type="search"
+            placeholder="Beaches, temples, countries…"
+            aria-label="Search travel recommendations"
+          /><button type="submit">Search</button
+          ><button class="reset" type="button" id="resetBtn">Reset</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="small-line"></span> THE WORLD IS STILL FULL OF WONDER
+          </div>
+          <h1>Go somewhere<br />that <em>stays with you.</em></h1>
+          <p>
+            Quiet shores. Ancient stories. A different way of seeing.<br />Discover
+            a place that feels like your next great adventure.
+          </p>
+          <a class="hero-button" href="#explore"
+            >Find your place <span>↗</span></a
+          >
+        </div>
+        <div class="hero-bottom">
+          <span>LESS SCROLLING. MORE EXPLORING.</span
+          ><span
+            >01 / YOUR NEXT CHAPTER <span class="circle-arrow">↓</span></span
+          >
+        </div>
+        <div class="image-credit">Coastal escape · Photo: Unsplash</div>
+      </section>
+      <section class="explore" id="explore">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow teal">
+              A LITTLE DIRECTION FOR YOUR WANDERLUST
+            </div>
+            <h2>What calls to you?</h2>
+          </div>
+          <p>Search a category above to discover<br />somewhere worth going.</p>
+        </div>
+        <div class="categories">
+          <article>
+            <span class="category-number">01</span>
+            <div class="category-icon">☀</div>
+            <h3>By the water</h3>
+            <p>Slow mornings, salt air and beautiful beaches.</p>
+            <span class="keyword">Search “beach” ↗</span>
+          </article>
+          <article>
+            <span class="category-number">02</span>
+            <div class="category-icon">⌂</div>
+            <h3>Into the stories</h3>
+            <p>Find stillness and history in remarkable temples.</p>
+            <span class="keyword">Search “temple” ↗</span>
+          </article>
+          <article>
+            <span class="category-number">03</span>
+            <div class="category-icon">◎</div>
+            <h3>Across borders</h3>
+            <p>New cities, new perspectives, a world of possibility.</p>
+            <span class="keyword">Search “country” ↗</span>
+          </article>
+        </div>
+      </section>
+      <section
+        class="results-section"
+        id="resultsSection"
+        hidden
+        aria-labelledby="resultsHeading"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow teal">YOUR NEXT ADVENTURE</div>
+            <h2 id="resultsHeading">Places to discover</h2>
+          </div>
+          <p id="resultCount"></p>
+        </div>
+        <p id="searchStatus" role="status" aria-live="polite"></p>
+        <div class="results-grid" id="results"></div>
+      </section>
+      <section class="closing">
+        <span class="eyebrow teal">MAKE ROOM FOR A LITTLE WONDER</span>
+        <p>The best journeys begin<br />with <em>“what if?”</em></p>
+        <a href="about_us.html">Meet the idea behind Roam ↗</a>
+      </section>
+    </main>
+    <footer>
+      <a class="footer-brand" href="travel_recommendation.html">roam.</a
+      ><span>A little curiosity. A whole world to discover.</span
+      ><span
+        >Travel recommendation · Course project ·
+        <a href="about_us.html#photo-credits">Photo credits</a></span
+      >
+    </footer>
+  </body>
+</html>

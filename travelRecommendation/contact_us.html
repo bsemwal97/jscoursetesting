@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover beaches, temples and remarkable places with Roam, a travel recommendation project."
+    />
+    <title>Contact Us | Roam Travel</title>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+    <script src="travel_recommendation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a
+          class="brand"
+          href="travel_recommendation.html"
+          aria-label="Roam home"
+          ><span class="brand-icon">✳</span> roam<span class="brand-dot"
+            >.</span
+          ></a
+        >
+        <div class="nav-links">
+          <a href="travel_recommendation.html">Home</a
+          ><a href="about_us.html">About Us</a
+          ><a aria-current="page" href="contact_us.html">Contact Us</a>
+        </div>
+        <span class="nav-note">GO FURTHER. FEEL MORE.</span>
+      </nav>
+    </header>
+    <main class="contact-layout">
+      <section class="contact-intro">
+        <div class="eyebrow teal">EVERY JOURNEY STARTS WITH A HELLO</div>
+        <h1>Let’s talk<br /><em>possibilities.</em></h1>
+        <p>
+          Have a question, a favourite place or an idea to share? Leave a
+          message below.
+        </p>
+        <div class="contact-detail">
+          <span>✳</span>
+          <p>
+            A little inspiration goes a long way.<br />We’d love to hear yours.
+          </p>
+        </div>
+      </section>
+      <section class="contact-card">
+        <h2>Drop us a note.</h2>
+        <p>This is a demo form. Messages are not sent or stored.</p>
+        <form id="contactForm">
+          <label for="name">Your name</label
+          ><input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          /><label for="email">Email address</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          /><label for="message">Your message</label
+          ><textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us what’s on your mind…"
+            required
+          ></textarea
+          ><button class="submit-button" type="submit">
+            Submit message <span>↗</span>
+          </button>
+          <p id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="footer-brand" href="travel_recommendation.html">roam.</a
+      ><span>A little curiosity. A whole world to discover.</span
+      ><span
+        >Travel recommendation · Course project ·
+        <a href="about_us.html#photo-credits">Photo credits</a></span
+      >
+    </footer>
+  </body>
+</html>
